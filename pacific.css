@@ -1,0 +1,125 @@
+/* 
+File: style.css
+GUI Assignment: Homework 2 - Modifying the css file to replicate the expected appearance
+Content: This files uses CSS to style to structure the index page. 
+Alireza Jahanban, UMass Lowell Computer Science, Alireza_Jahanban@student.uml.edu
+Copyright (c) 2024 by Jahanban. All rights reserved. 
+This code is free to use by anyone for business or educational purposes with credit to the author.
+Written in Sep 2024.
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+body {
+    width: 80%;
+    min-width: 600px;
+    margin: 15px auto 0 auto;
+	padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+	background-color: cornflowerblue;
+	background-image: url(ptrbackground.jpg);
+}
+
+#wrapper {
+	display: grid;
+	grid-template-columns: 200px auto;
+	grid-template-rows: auto auto auto;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
+	color: rgb(97, 97, 97);
+}
+
+header {
+	height: 50px;
+	grid-column: 1 / span 2;
+	background-image: url(sunset.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #000034;
+}
+
+header > h1 {
+	margin-left: 10px;
+	margin-top: 7px;
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+	grid-column: 1;
+	grid-row: 2 / span 3;
+	background-color: #90c8e3;
+}
+
+nav ul {
+	list-style-type: none;
+	padding-left: 20px;
+	font-size: large;
+	font-weight: bold;
+}
+
+nav li a {
+	color:#000034;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: white;
+}
+
+#content {
+	padding-left: 30px;
+}
+
+#content > h2 {
+	font-family: 'Times New Roman', Times, serif;
+	color: #3f98c2;
+}
+
+#content > img {
+	float: left;
+	margin-right: 20px;
+}
+
+#content > p,
+#content > ul,
+#content > #contact {
+	margin-right: 10px;
+
+}
+
+#content > p > span {
+	font-weight: bold;
+	color: #627ca9;
+}
+
+#content > ul {
+	padding-left: 50px;
+	list-style: inside;
+}
+
+#content ul li {
+	list-style-image: url(marker.gif);
+}
+
+#content > #contact {
+	font-size: small;
+}
+
+#content > #contact > span {
+	font-weight: bold;
+	color: #627ca9;
+}
+
+footer {
+	grid-column: 2;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: small;
+	font-style: italic;
+}
